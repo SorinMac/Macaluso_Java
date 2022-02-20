@@ -10,6 +10,7 @@ public class Problem4 {
         //calculations
         double pointX = Math.random() * (5 - -5) + -5;
         double pointY = Math.random() * (5 - -5) + -5;
+        // JA: This will generate points outside the circle
         double distance = Math.pow((pointX * pointX) + (pointY * pointY), 0.5);
 
         //prints the output
