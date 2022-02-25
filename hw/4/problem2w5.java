@@ -1,7 +1,7 @@
 //Sorin Macaluso
 //hw3
 //CMPT 220 
-//Problem4.java
+//problem2w5.java
 
 import java.util.Scanner;
 
