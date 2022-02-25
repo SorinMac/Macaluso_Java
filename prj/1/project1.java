@@ -9,7 +9,7 @@ public class project1 {
     public static void main(String[] args){
         //creates the scanner
         Scanner input = new Scanner(System.in);
-        System.out.print("What if your first number and what is the average (between -1000 and 1000): ");
+        System.out.print("What is your first number and what is the average (between -1000 and 1000): ");
         double numberOne = input.nextDouble();
         double average = input.nextDouble();
 

@@ -63,8 +63,13 @@ public class problem3w5 {
                 secondOccurance = firstOccurance + 3;
                 
                 //different print statments
-
+                if(firstOccurance == 0){
+                    System.out.println("There is no genome");
+                }
+                else{
                     System.out.println(gene);
+                }
+
         
                 
                 
