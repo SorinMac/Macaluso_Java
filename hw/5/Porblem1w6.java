@@ -13,8 +13,6 @@ public class Porblem1w6 {
         long number = n;
         int total = 1;
 
-        System.out.print("The multiplication of all its digits is" );
-
         //math to find the indiviual digits in the 10 place, 100 place, 1000 place, and so on
         while(n > 0){
             n = number % 10;
