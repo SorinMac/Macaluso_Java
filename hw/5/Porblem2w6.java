@@ -22,7 +22,7 @@ public class Porblem2w6 {
 
             //the check is used to see weather it should output a 0 or a 1
             if(check == 0){
-                binary += "1";
+                binary += "1"; // JA: This logic is reversed
             }
             else{
                 binary += "0";
