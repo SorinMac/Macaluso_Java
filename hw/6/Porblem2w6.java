@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Porblem2w6 {
     public static void main(String[] args){
         //two arrays of 6 for the x and the y points
-        int[] xArray = new int[6];
+        int[] xArray = new int[6]; // JA: These should be doubles
         int[] yArray = new int[6];
         int area = 0;
 
