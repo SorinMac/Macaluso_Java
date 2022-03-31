@@ -19,6 +19,7 @@ public class Problem2w7 {
         double partd = -(x3x - x4x);
         double partf = ((y3y - y4y)*x3x) - ((x3x - x4x)*y3y);
 
+        //calculates the denominatior
         double denom = ((parta * partd) - (partb * partc));
 
         //actual finding of the x point and y point
@@ -28,10 +29,11 @@ public class Problem2w7 {
 
 
         if(denom == 0){
+            //check the output to makes sure the lines are not parrallel
             System.out.println("The lines are parallel.");
         }
         else{
-             //prints oupt to user
+             //prints output to user
             System.out.println("Your intersection point is (" + pointx + " , " + pointy + ").");
         }
         
