@@ -5,6 +5,7 @@
 
 //uses a method to split a string with the users delimeteres
 
+// JA: You are missing the last substring
 import java.util.Scanner;
 
 public class Problem1 {

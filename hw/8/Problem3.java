@@ -67,15 +67,10 @@ class Itinerary {
 
     //gets the total time from last flight to the first flights
     int getTotalTime() {
-      int startTime = (int)flights.get(0).getArrivalTime().getTimeInMillis() - (int)flights.get(0).getDepartureTime().getTimeInMillis();
-      startTime = startTime/60000;
 
-      int endTime = (int)flights.get(flights.size()-1).getArrivalTime().getTimeInMillis() - (int)flights.get(flights.size()-1).getDepartureTime().getTimeInMillis();
-      endTime = endTime/60000;
+      int totalTime =  (int)flights.get(flights.size()-1).getArrivalTime().getTimeInMillis() - (int)flights.get(0).getDepartureTime().getTimeInMillis();
 
-      int totalTime = endTime - startTime;
-
-      return totalTime;
+      return totalTime / 60000;
       }
     
     //get the total time from all the fligths combined

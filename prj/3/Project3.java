@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Project3 {
     public static void main(String[] args){
         //intalizing variables
-        int row = 40;
+        int row = 40; // JA: Why 40x40?
         int column = 40;
         char[][] mirror = new char[row][column];
         row = 0;
