@@ -59,7 +59,7 @@ class Rational extends Number implements Comparable<Rational> {
       }
       else{
         numerator = Integer.parseInt(s.substring(0,1));
-        denominator = Integer.parseInt(s.substring(2,3));
+        denominator = Integer.parseInt(s.substring(2,4));
       }
      
       Rational r1 = new Rational(numerator, denominator);
