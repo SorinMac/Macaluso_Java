@@ -76,7 +76,7 @@ class Time implements Comparable<Time> {
 
 
    //compare to method to use
-    @Override
+   @Override
     public int compareTo(Time t) {
         long elapseTime = 0;
         elapseTime = getElapseSec() - t.getElapseSec();
@@ -97,7 +97,6 @@ public class Problem1 {
         int userMin = input.nextInt();
         int userSec = input.nextInt();
 
-        input.close();
 
         //construcst the time and then prints it out
         Time time1 = new Time(userHour, userMin, userSec);
