@@ -53,10 +53,15 @@ class Rational extends Number implements Comparable<Rational> {
     public static Rational parseRationalNumber(String s) {
       int numerator = 0;
       int denominator = 0;
-      
-      numerator = Integer.parseInt(s.substring(0,1));
-      denominator = Integer.parseInt(s.substring(2,3));
-
+      if(s.length() == 1){
+        numerator = Integer.parseInt(s.substring(0,1));
+        denominator = 1;
+      }
+      else{
+        numerator = Integer.parseInt(s.substring(0,1));
+        denominator = Integer.parseInt(s.substring(2,3));
+      }
+     
       Rational r1 = new Rational(numerator, denominator);
 
       return r1;
