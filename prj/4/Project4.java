@@ -87,6 +87,7 @@ public class Project4{
 
     
 
+    // JA: This method has to return a BabyName, but it is not.
     public static BabyName findName(String name, int year, ArrayList<BabyName> names){
         int place = 0;
         BabyName checkName = names.get(place);
@@ -142,6 +143,7 @@ public class Project4{
 
         //after loading all the baby names passes to findName to find the name at its rank
         findName(name, yearInt, nameList);
+        // JA: What about the output?
     }
 
 }
