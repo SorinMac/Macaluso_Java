@@ -32,11 +32,11 @@ public class Project5 {
         Complex number2 = new Complex(a, b);
 
         //calls the add, subtract, multiply, divide, and absolute value methods in the complex class
-        Complex addImagine = number1.getAdd(number2);
-        Complex subImagine = number1.getSubtract(number2);
-        Complex multImagine = number1.getMultipy(number2);
-        Complex divImagine = number1.getDivide(number2);
-        double abs = number1.getAbs();
+        Complex addImagine = number1.add(number2);
+        Complex subImagine = number1.subtract(number2);
+        Complex multImagine = number1.multipy(number2);
+        Complex divImagine = number1.divide(number2);
+        double abs = number1.abs();
 
         //prints out the infromation to the user
         System.out.println("( " + number1.getReal()+" + " + number1.getImaginary()+ "i )" + " + " + "( " + number2.getReal()+" + " + number2.getImaginary()+ "i ) = " + addImagine.getReal()+" + " + addImagine.getImaginary()+ "i" );

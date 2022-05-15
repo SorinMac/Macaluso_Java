@@ -8,6 +8,7 @@
 
 import java.util.Scanner;
 
+// JA: This is not calculating correctly
 public class Extra {
     public static void main(String[] agrs){
         //asks the user for the first complex number
@@ -38,15 +39,15 @@ public class Extra {
         Complex number3 = new Complex(a, b);
 
         //calcutlations to find the area of the three complex number points
-        Complex sub1 = number2.getSubtract(number3);
-        Complex sub2 = number3.getSubtract(number1);
-        Complex sub3 = number1.getSubtract(number2);
-        Complex mult1 = number1.getMultipy(sub1);
-        Complex mult2 = number2.getMultipy(sub2);
-        Complex mult3 = number3.getMultipy(sub3);
-        Complex add1 = mult1.getAdd(mult2);
-        Complex add2 = add1.getAdd(mult3);
-        double last = add2.getAbs();
+        Complex sub1 = number2.subtract(number3);
+        Complex sub2 = number3.subtract(number1);
+        Complex sub3 = number1.subtract(number2);
+        Complex mult1 = number1.multipy(sub1);
+        Complex mult2 = number2.multipy(sub2);
+        Complex mult3 = number3.multipy(sub3);
+        Complex add1 = mult1.add(mult2);
+        Complex add2 = add1.add(mult3);
+        double last = add2.abs();
         last = last/2;
 
         //prints the area to the user

@@ -30,7 +30,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
         b = 0;
     }
 
-    public Complex getAdd(Complex o){
+    public Complex add(Complex o){
         //adds the a part and the b part
         double addA = 0;
         double addB = 0;
@@ -40,7 +40,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
         return addNumber;
     }
 
-    public Complex getSubtract(Complex o){
+    public Complex subtract(Complex o){
         //subtracts the a part and the b part
         double subA = 0;
         double subB = 0;
@@ -50,7 +50,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
         return subNumber;
     }
 
-    public Complex getMultipy(Complex o){
+    public Complex multipy(Complex o){
         //multiplies the a part and the b part
         double multA = 0;
         double multB = 0;
@@ -60,7 +60,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
         return multNumber;
     }
 
-    public Complex getDivide(Complex o){
+    public Complex divide(Complex o){
         //divides the a part and the b part
         double divA = 0;
         double divB = 0;
@@ -72,7 +72,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
         return divNumber;
     }
 
-    public double getAbs(){
+    public double abs(){
         //calculates the abs
         double abs = 0;
         abs = (a*a) + (b*b);
@@ -83,6 +83,7 @@ public class Complex extends Number implements Cloneable,Comparable<Complex> {
 
     public String toString(Complex o){
         //makes the a and b into a complex string
+        // JA: What about wheb b is 0?
         String imaginary = a + " + " + b + "i.";
         return imaginary;
     }
